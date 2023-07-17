@@ -25,8 +25,8 @@ ${base}=eff1f5
 ${mantle}=e6e9ef
 ${crust}=dce0e8
 
-TERM_PALETTE=${subtext1},${red},${green},${yellow},${blue},${pink},${teal},${surface2}
-TERM_PALETTE_BRIGHT=${subtext0},${red},${green},${yellow},${blue},${pink},${teal},${surface1}
+TERM_PALETTE=${base},${red},${green},${yellow},${blue},${pink},${teal},${text}
+TERM_PALETTE_BRIGHT=${subtext0},${red},${green},${yellow},${blue},${pink},${teal},${text}
 TERM_BACKGROUND=${base}
 TERM_FOREGROUND=${text}
 TERM_BACKGROUND_BRIGHT=${surface0}

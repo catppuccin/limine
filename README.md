@@ -19,19 +19,19 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="assets/latte.webp"/>
+<img src="assets/latte.png"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/frappe.webp"/>
+<img src="assets/frappe.png"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/macchiato.webp"/>
+<img src="assets/macchiato.png"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="assets/mocha.webp"/>
+<img src="assets/mocha.png"/>
 </details>
 
 ## Usage
@@ -48,7 +48,7 @@
 	A: Add `INTERFACE_BRANDING=` to Limine config file, this will set it to an empty string
 
 -	Q: **_"What other configuration options exist?"_**\
-	A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v4.x-branch/CONFIG.md)
+	A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v5.x-branch/CONFIG.md)
 
 ## 💝 Thanks to
 

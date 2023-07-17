@@ -6,10 +6,10 @@ ScriptDir=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 sub_help() {
   echo "Usage: $ProgName <theme>"
   echo "Available themes:"
-  echo "  mocha"
-  echo "  macchiato"
   echo "  latte"
   echo "  frappe"
+  echo "  macchiato"
+  echo "  mocha"
 }
 
 subcommand="$1"
@@ -18,7 +18,7 @@ case "$subcommand" in
     sub_help
     exit
     ;;
-  mocha | macchiato | latte | frappe)
+  latte | frappe | macchiato | mocha)
     declare -A colors
     while IFS=$'\n' read -r line; do
       if [[ "$line" == '$'* ]]; then
