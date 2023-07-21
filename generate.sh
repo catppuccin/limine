@@ -1,18 +1,14 @@
 #!/bin/sh
 
-sub_help() {
-  echo "Usage: generate.sh <theme>"
-  echo "Available themes:"
-  echo "  latte"
-  echo "  frappe"
-  echo "  macchiato"
-  echo "  mocha"
-}
-
 subcommand="$1"
 case "$subcommand" in
   "" | "-h" | "--help")
-    sub_help
+    echo "Usage: generate.sh <theme>"
+    echo "Available themes:"
+    echo "  latte"
+    echo "  frappe"
+    echo "  macchiato"
+    echo "  mocha"
     exit
     ;;
   latte | frappe | macchiato | mocha)
