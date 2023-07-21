@@ -37,7 +37,7 @@
 ## Usage
 
 1. Clone this repository locally
-2. Run `./generate.bash <theme>` (eg `./generate.bash mocha`)
+2. Run `./generate.sh <theme>` (eg `./generate.sh mocha`)
     - Alternatively, if you would like to use different Catppuccin colors for your boot menu, copy the contents of the theme file in `themes/` instead and edit accordingly
 3. Paste the output to the start of your Limine config file
     - This file is typically located at `/boot/limine.cfg` or `/boot/efi/limine.cfg`
