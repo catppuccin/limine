@@ -12,7 +12,7 @@ case "$subcommand" in
     exit
     ;;
   latte | frappe | macchiato | mocha)
-    sed -f "./themes/${subcommand}_colors" "./themes/${subcommand}"
+    sed -f "./themes/${subcommand}_colors" "./themes/${subcommand}_theme"
     ;;
   *)
     echo "Error: '$subcommand' is not a known theme." >&2
