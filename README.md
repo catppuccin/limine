@@ -48,7 +48,7 @@
 	A: Add `INTERFACE_BRANDING=` to Limine config file, this will set it to an empty string
 
 -	Q: **_"What other configuration options exist?"_**\
-	A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v5.x-branch/CONFIG.md)
+	A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v7.x/CONFIG.md)
 
 ## 💝 Thanks to
 
