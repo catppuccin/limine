@@ -1,6 +1,0 @@
-TERM_PALETTE={base},{red},{green},{yellow},{blue},{pink},{teal},{text}
-TERM_PALETTE_BRIGHT={subtext0},{red},{green},{yellow},{blue},{pink},{teal},{text}
-TERM_BACKGROUND={base}
-TERM_FOREGROUND={text}
-TERM_BACKGROUND_BRIGHT={surface0}
-TERM_FOREGROUND_BRIGHT={text}

@@ -1,0 +1,16 @@
+---
+whiskers:
+  version: 2.1.0
+  matrix:
+    - flavor
+  filename: "themes/catppuccin-{{ flavor.identifier }}.cfg"
+---
+
+{%- set palette = flavor.colors -%}
+
+TERM_PALETTE={{ palette.base.hex }},{{ palette.red.hex }},{{ palette.green.hex }},{{ palette.yellow.hex }},{{ palette.blue.hex }},{{ palette.pink.hex }},{{ palette.teal.hex }},{{ palette.text.hex }}
+TERM_PALETTE_BRIGHT={% if flavor.dark %}{{ palette.surface2.hex }}{% else %}{{ palette.subtext0.hex }}{% endif %},{{ palette.red.hex }},{{ palette.green.hex }},{{ palette.yellow.hex }},{{ palette.blue.hex }},{{ palette.pink.hex }},{{ palette.teal.hex }},{{ palette.text.hex }}
+TERM_BACKGROUND={{ palette.base.hex }}
+TERM_FOREGROUND={{ palette.text.hex }}
+TERM_BACKGROUND_BRIGHT={% if flavor.dark %}{{ palette.surface2.hex }}{% else %}{{ palette.surface0.hex }}{% endif %}
+TERM_FOREGROUND_BRIGHT={{ palette.text.hex }}
