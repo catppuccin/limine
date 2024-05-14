@@ -19,36 +19,32 @@
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="assets/latte.png"/>
+<img src="assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/frappe.png"/>
+<img src="assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/macchiato.png"/>
+<img src="assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary>
-<img src="assets/mocha.png"/>
+<img src="assets/mocha.webp"/>
 </details>
 
 ## Usage
 
-1. Clone this repository locally
-2. Run `./generate.sh <theme>` (eg `./generate.sh mocha`)
-    - Alternatively, if you would like to use different Catppuccin colors for your boot menu, open the respective file in `themes/` and edit accordingly
-3. Paste the output to the start of your Limine config file
-    - This file is typically located at `/boot/limine.cfg` or `/boot/efi/limine.cfg`
+1. Paste the contents of the flavor of your choice from [`themes/`](./themes/) to the start of your Limine configuration file, which is typically located at `/boot/limine.cfg` or `/boot/efi/limine.cfg`.
 
 ## 🙋 FAQ
 
--	Q: **_"How can I hide the Limine title text like in the screenshot?"_**\
-	A: Add `INTERFACE_BRANDING=` to Limine config file, this will set it to an empty string
+- Q: **_"How can I hide the Limine title text like in the screenshot?"_**\
+  A: Add `INTERFACE_BRANDING=` to Limine config file, this will set it to an empty string
 
--	Q: **_"What other configuration options exist?"_**\
-	A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v7.x/CONFIG.md)
+- Q: **_"What other configuration options exist?"_**\
+  A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v7.x/CONFIG.md)
 
 ## 💝 Thanks to
 
