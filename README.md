@@ -41,10 +41,10 @@
 ## 🙋 FAQ
 
 - Q: **_"How can I hide the Limine title text like in the screenshot?"_**\
-  A: Add `INTERFACE_BRANDING=` to Limine config file, this will set it to an empty string
+  A: Add `INTERFACE_BRANDING=` to your configuration file to set it to an empty string and hide it.
 
 - Q: **_"What other configuration options exist?"_**\
-  A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v7.x/CONFIG.md)
+  A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v7.x/CONFIG.md).
 
 ## 💝 Thanks to
 
