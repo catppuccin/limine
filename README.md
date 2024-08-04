@@ -36,15 +36,15 @@
 
 ## Usage
 
-1. Paste the contents of the flavor of your choice from [`themes/`](./themes/) to the start of your Limine configuration file, which is typically located at `/boot/limine.cfg` or `/boot/efi/limine.cfg`.
+1. Paste the contents of the flavor of your choice from [`themes/`](./themes/) to the start of your Limine configuration file, which is typically located at `/boot/limine.conf` or `/boot/efi/limine.conf`.
 
 ## 🙋 FAQ
 
 - Q: **_"How can I hide the Limine title text like in the screenshot?"_**\
-  A: Add `INTERFACE_BRANDING=` to your configuration file to set it to an empty string and hide it.
+  A: Add `interface_branding:` to your configuration file to set it to an empty string and hide it.
 
 - Q: **_"What other configuration options exist?"_**\
-  A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v7.x/CONFIG.md).
+  A: See [limine/CONFIG.md](https://github.com/limine-bootloader/limine/blob/v8.x/CONFIG.md).
 
 ## 💝 Thanks to
 
