@@ -1,16 +1,13 @@
 ---
 whiskers:
-  version: 2.1.0
+  version: "^2.9.0"
   matrix:
     - flavor
   filename: "themes/catppuccin-{{ flavor.identifier }}.conf"
 ---
-
-{%- set palette = flavor.colors -%}
-
-term_palette: {{ palette.base.hex }};{{ palette.red.hex }};{{ palette.green.hex }};{{ palette.yellow.hex }};{{ palette.blue.hex }};{{ palette.pink.hex }};{{ palette.teal.hex }};{{ palette.text.hex }}
-term_palette_bright: {% if flavor.dark %}{{ palette.surface2.hex }}{% else %}{{ palette.subtext0.hex }}{% endif %};{{ palette.red.hex }};{{ palette.green.hex }};{{ palette.yellow.hex }};{{ palette.blue.hex }};{{ palette.pink.hex }};{{ palette.teal.hex }};{{ palette.text.hex }}
-term_background: {{ palette.base.hex }}
-term_foreground: {{ palette.text.hex }}
-term_background_bright: {% if flavor.dark %}{{ palette.surface2.hex }}{% else %}{{ palette.surface0.hex }}{% endif %}
-term_foreground_bright: {{ palette.text.hex }}
+term_palette: {{ base.hex }};{{ red.hex }};{{ green.hex }};{{ yellow.hex }};{{ blue.hex }};{{ pink.hex }};{{ teal.hex }};{{ text.hex }}
+term_palette_bright: {{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }};{{ red.hex }};{{ green.hex }};{{ yellow.hex }};{{ blue.hex }};{{ pink.hex }};{{ teal.hex }};{{ text.hex }}
+term_background: {{ base.hex }}
+term_foreground: {{ text.hex }}
+term_background_bright: {{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }}
+term_foreground_bright: {{ text.hex }}
