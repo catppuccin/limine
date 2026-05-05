@@ -48,7 +48,7 @@
 
 ## 💝 Thanks to
 
-- [mekb](https://github.com/mekb-turtle)
+- [sophur](https://github.com/sophuric)
 
 &nbsp;
 
