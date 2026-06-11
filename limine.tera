@@ -12,11 +12,9 @@ whiskers:
 {#- Set the default value to the accent color -#}
 {#- Defining these in the frontmatter seems to only work for constant string literals -#}
 
-{%- set palette = flavor.colors -%}
-
-{%- set interface_branding_color = palette | get(key=interface_branding_color | default(value=accent)) -%}
-{%- set interface_help_color = palette | get(key=interface_help_color | default(value=accent)) -%}
-{%- set interface_help_color_bright = palette | get(key=interface_help_color_bright | default(value=accent)) -%}
+{%- set interface_branding_color = flavor.colors | get(key=interface_branding_color | default(value=accent)) -%}
+{%- set interface_help_color = flavor.colors | get(key=interface_help_color | default(value=accent)) -%}
+{%- set interface_help_color_bright = flavor.colors | get(key=interface_help_color_bright | default(value=accent)) -%}
 
 term_palette: {{ base.hex }};{{ red.hex }};{{ green.hex }};{{ yellow.hex }};{{ blue.hex }};{{ pink.hex }};{{ teal.hex }};{{ text.hex }}
 term_palette_bright: {{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }};{{ red.hex }};{{ green.hex }};{{ yellow.hex }};{{ blue.hex }};{{ pink.hex }};{{ teal.hex }};{{ text.hex }}
