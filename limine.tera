@@ -3,11 +3,25 @@ whiskers:
   version: "^2.9.0"
   matrix:
     - flavor
-  filename: "themes/catppuccin-{{ flavor.identifier }}.conf"
+    - accent
+  filename: "themes/{{ flavor.identifier }}/catppuccin-{{ flavor.identifier }}-{{ accent }}.conf"
 ---
+
+{#- See https://github.com/Limine-Bootloader/Limine/blob/v12.x/CONFIG.md#options:~:text=Limine%20interface%20control%20options -#}
+
+{#- Set the default value to the accent color -#}
+{#- Defining these in the frontmatter seems to only work for constant string literals -#}
+
+{%- set interface_branding_color = flavor.colors | get(key=interface_branding_color | default(value=accent)) -%}
+{%- set interface_help_color = flavor.colors | get(key=interface_help_color | default(value=accent)) -%}
+{%- set interface_help_color_bright = flavor.colors | get(key=interface_help_color_bright | default(value=accent)) -%}
+
 term_palette: {{ base.hex }};{{ red.hex }};{{ green.hex }};{{ yellow.hex }};{{ blue.hex }};{{ pink.hex }};{{ teal.hex }};{{ text.hex }}
 term_palette_bright: {{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }};{{ red.hex }};{{ green.hex }};{{ yellow.hex }};{{ blue.hex }};{{ pink.hex }};{{ teal.hex }};{{ text.hex }}
 term_background: {{ base.hex }}
 term_foreground: {{ text.hex }}
 term_background_bright: {{ if(cond=flavor.dark, t=surface2.hex, f=subtext0.hex) }}
 term_foreground_bright: {{ text.hex }}
+interface_branding_color: {{ interface_branding_color.hex }}
+interface_help_color: {{ interface_help_color.hex }}
+interface_help_color_bright: {{ interface_help_color_bright.hex }}
